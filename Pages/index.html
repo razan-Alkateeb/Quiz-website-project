@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fredoka:wght@600&family=Graduate&family=Pacifico&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/index.css" />
+  </head>
+
+  <body>
+    <div id="contener">
+      <div id="navbar">
+        <div id="logo">
+          <img class="imglogo" src="/Images/NEWLOGO.png" />
+        </div>
+        <div class="btn">
+
+          <button id="btnlog1"><a id ="toLogOut" href="/Pages/login.html">Login</a></button>
+          <button id="btnlog2"><a href="/Pages/registration.html">Registration</a></button>
+        </div>
+      </div>
+
+      <div id="box">
+        <div class="text">
+          <h1></h1>
+      <h3 id="h3name">Please read before start</h3>
+          <p class="exam">
+            Welcome to the front-end developer exam at WebGenius Company. Show
+            your skills in HTML, CSS, and JavaScript. Good luck! Let's see your
+            creativity and problem-solving abilities. Have fun!
+          </p>
+
+          <p class="exam">
+            You will have three exams: English, IQ, and Technology. Demonstrate
+            your proficiency in these areas. Best of luck in showcasing your
+            knowledge and abilities. Do your best!
+          </p>
+
+          <button id="strbtn" onclick="goToQuiz()"> Start Quiz</button>
+        </div>
+
+        <div id="backgroud">
+          <img class="imgbg" src="/Images/BACKGR.png"/>
+          <script>
+            function goToQuiz(){
+              window.location.href = "/Pages/login.html";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- USERS [{USER: EMAIL: PASSWORD},{USER: EMAIL: PASSWORD}]
+
+  USERLOGGEDIN ["USER", TRUE]
+ -->

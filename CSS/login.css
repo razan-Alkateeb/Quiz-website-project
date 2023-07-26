@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #def7e5;
+}
+.container {
+  background: white;
+  display: flex;
+  height: 580px;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+.input-icon {
+  width: 380px;
+  margin-left: 81px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+.form h2 {
+  font-size: 4rem;
+  margin: 60px;
+}
+.emailBox {
+  padding: 12px;
+  width: 65%;
+  margin: 15px;
+  border: 2px solid #00821f;
+  outline: none;
+  border-radius: 10px;
+}
+.passBox {
+  padding: 12px;
+  width: 65%;
+  margin: 15px;
+  border: 2px solid #00821f;
+  outline: none;
+  border-radius: 10px;
+}
+#submit {
+  padding: 12px 30px;
+  width: 22%;
+  margin-top: 20px;
+  background-color: #00821f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #13b84a;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.side img {
+  width: 550px;
+}
+p {
+  color: grey;
+}
+.spann {
+  color: #00821f;
+  font-weight: bold;
+  font-size: 15px;
+}
+span {
+  font-size: 13px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+  /***************************************************Tablet****************************************************/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .side img {
+    width: 387px;
+  }
+
+  #submit {
+    /* padding: 12px 30px; */
+    width: 54%;
+    height: 7%;
+
+    /* outline: none; */
+  }
+}
+/***************************************************Mobile****************************************************/
+@media screen and (max-width: 480px) {
+  .container {
+    width: 400px;
+    height: 800px;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+  }
+  .form {
+    display: inline;
+    /* width: 50%; */
+  }
+  .form h2 {
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .side {
+    display: none;
+  }
+  .input-icon {
+    /* width: 0px; */
+    margin-left: 38px;
+    margin-top: 0;
+  }
+
+  #submit {
+    padding: 12px 30px;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 24%;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: grey;
+    font-size: larger;
+    margin-left: 24%;
+  }
+  .spann {
+    font-weight: bold;
+    font-size: large;
+    margin-left: 35%;
+  }
+  .passBox {
+    height: 50px;
+  }
+  .emailBox  {
+    height: 50px;
+  }
+}
+

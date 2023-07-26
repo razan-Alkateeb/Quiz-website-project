@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #def7e5;
+}
+.container {
+  background: white;
+  display: flex;
+  height: 580px;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+
+.form h2 {
+  font-size: 3rem;
+  margin: 40px;
+}
+.box {
+  padding: 12px;
+  width: 65%;
+  margin: 10px;
+  border: 2px solid #00821f;
+  outline: none;
+  border-radius: 10px;
+}
+#submit {
+  padding: 12px 30px;
+  width: 22%;
+  margin-top: 20px;
+  background-color: #00821f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: #13b84a;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+a{
+  text-decoration: none;
+}
+.side img {
+  width: 550px;
+}
+p {
+  color: grey;
+}
+.spann {
+  color: #00821f;
+  font-weight: bold;
+  font-size: 15px;
+}
+span {
+  font-size: 13px;
+}
+.input-icon {
+  width: 380px;
+  margin-left: 81px;
+}
+
+/***************************************************Tablet****************************************************/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .side img {
+    width: 400px;
+  }
+  .form h2 {
+    font-size: 32px;
+    margin: 40px;
+  }
+  #submit {
+    width: 50%;
+    margin-top: 20px;
+    background-color: #00821f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+}
+
+/***************************************************Mobile****************************************************/
+@media screen and (max-width: 480px) {
+  .side img {
+    display: none;
+  }
+  .form h2 {
+    /* font-size: 25px;
+    margin-left: 22%;
+    padding-top: 20px; */
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .side {
+    display: inline;
+    justify-content: 0;
+    align-items: 0;
+    width: 0;
+  }
+  .container {
+    display: block;
+    height: 720px;
+    width:370px;
+    margin: auto;
+    margin-top: 5%;
+  }
+  .form {
+    display: inline;
+    width: 0%;
+  }
+  .input-icon {
+    width: 335px;
+    margin-left: 55px;
+  }
+  #submit {
+    padding: 0;
+    width: 45%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 112px;
+  }
+  p {
+    font-size: larger;
+    margin-left: 90px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .spann {
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 139px;
+  }
+  .box{
+    height: 50px;
+  }
+}

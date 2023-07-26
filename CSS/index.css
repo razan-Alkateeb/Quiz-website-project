@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#def7e5 ;
+}
+#contener{
+    background-color: white;
+    margin: 4.5% 3% 3% 7% ;
+    border-radius: 50px;  
+    width:85%;
+    height: 600px;
+}
+#navbar{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 20%;
+}
+#logo{
+    grid-column: 1/2;
+    border-radius: 50%;        
+}
+.imglogo{
+    border-radius: 50%;
+    width: 22%;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.btn{
+    display: flex;
+    margin-top: 10%;
+    grid-column: 2/3;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+#btnlog1{
+    background-color: white;
+    color: #00821f;
+    border: solid 2px #00821f;
+    width: 130px;
+    height: 32px;
+    border-radius: 5%;
+    font-weight: bold ;
+    font-size: larger;
+    font-family: 'Roboto Slab'
+}
+#btnlog2{
+    background-color: white;
+    color: #00821f;
+    border: solid 2px #00821f;
+    width: 130px;
+    height: 32px;
+    border-radius: 5%;
+    font-weight: bold ;
+    font-size: larger;
+    font-family: 'Roboto Slab'
+}
+#box{
+    display: grid;
+    grid-template-columns: 45%  45%;
+    justify-content: space-between;
+    margin-left: 50px;
+    gap: 10px;
+}
+.text{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 10px;
+}
+h1{
+    grid-column: 1/2;
+    height: 10%;
+    margin-top: 4%;
+}
+.exam{
+    margin-top: 20px;
+    justify-content: space-between;
+    font-size: large;
+    margin-top: 5%;
+}
+#backgroud{
+    grid-column: 2/3; 
+    /* margin-bottom: 20px; */
+}
+.imgbg{
+    width: 85%;
+    margin-bottom: 20px;
+    
+}
+#strbtn{
+    background-color: #00821f;
+    border-radius: 10px;
+    color: white;
+    width: 40%;
+    height: 10%;
+    border: #00821f solid 1px;
+    font-size: large;
+    font-weight: bold ;
+    margin-left: 5px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+#strbtn:hover{
+    cursor: pointer;
+    background-color: #13b84a;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+h1::after{
+    content: " ";
+    animation: animate 5s infinite ease-in-out ;
+    animation-fill-mode: none; 
+}
+@keyframes animate {
+    0% {
+            content: "W|";
+    }
+    8% {
+        content: "WE|";
+    }
+    16% {
+        content: "WEL|";
+    }
+    24%{
+        content: "WELC|";
+    }
+    32%{
+        content: "WELCO|";
+    }
+    40%{
+        content: "WELCOM|";
+    }
+    48%{
+        content: "WELCOME|";
+    }
+    56%{
+        content: "WELCOME |";
+    }
+    64%{
+        content: "WELCOME H|";
+    }
+    72%{
+        content: "WELCOME HE|";
+    }
+    80%{
+        content: "WELCOME HER|";
+    }
+    100%{
+        content: "WELCOME HERE |";
+    }
+}
+#strbtn:hover {
+    background-color: #00821f;
+}
+#strbtn:active {
+    /* background-color: #0e5acd; */
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
+}
+#btnlog1:hover {
+    background-color: #def7e5;
+}
+#btnlog1:hover {
+    /* background-color: #4fe414; */
+    /* color: azure; */
+    transform: translateY(4px);}
+    /* .btnlog2:hover {background-color: white} */
+    #btnlog2:hover {
+    background-color:#def7e5;
+    /* color: azure; */
+    transform: translateY(4px);
+}
+a{
+    text-decoration: none;
+    color: #00821f;
+}
+/***************************************************Tablet****************************************************/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .imglogo{
+        border-radius: 50%;
+        width: 25%;
+        margin-top: 10px;
+        margin-left: 60px;
+    }
+    #box{
+        grid-template-columns: 50%  50%;
+        gap: 0px;
+        margin-left: 25px;
+    }
+    .imgbg{
+        height: 90%;
+        width: 90%;
+    }
+    #strbtn{
+        width: 60%;
+    }
+    .exam{
+        font-size: large;
+    }
+    #strbtn{
+        height: 40px;
+    }
+    .text{
+        gap: 25px;
+    }
+}
+
+/***************************************************Mobile****************************************************/
+@media screen and (max-width: 480px){
+
+    #contener{ 
+        width: 85%;
+        border-radius: 0;
+        height: 720px;
+    } 
+    /* #contener.background-image { 
+        margin-bottom: 50%;
+    } */
+    .btn{
+        display: inline;
+    }
+    .imglogo {
+        width: 80%;
+        margin: 0px;
+        margin-left: 20px;
+    }
+    #btnlog1{
+        margin-top: 10px;
+        width: 110px;
+        font-size: large;
+    }
+    #btnlog2{
+        margin-top: 5px;
+        width: 110px;
+        font-size: large;
+    }
+
+    #box{
+        display: inline; 
+    }
+    .imgbg{
+    display: none;
+    }
+    #strbtn{
+        border-radius: 5px;
+        width: 50%;
+        height: 40px;
+        font-size: large;
+        font-weight: bold ;
+        margin-left: 25%;
+        margin-top: 0; 
+    }
+}

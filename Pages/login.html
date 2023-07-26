@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="/CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form id="loginForm" action="" class="form" method="post" >
+        <h2>Sign in</h2>
+        <div class="input-icon">
+          <i class="fa-solid fa-envelope"></i
+          ><input
+            type="email"
+            id="email"
+            name="email"
+            class="emailBox"
+            id="email"
+            required
+            placeholder="Enter Your Email"
+          >
+          <span></span>
+        </div>
+        <div class="input-icon">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="passBox"
+            id="password"
+            required
+            placeholder="Enter Your Password"
+          />
+          <span></span>
+        </div>
+        <button type="submit"  value="Login" id="submit"> LOGIN</button>
+        <p id="result"></p>
+        <br />
+        <p>Don't have an account ?</p>
+        <a class="active" href="/Pages/registration.html"><span class="spann">Sign up now</span></a>
+      </form>
+      <div class="side">
+        <img src="/Images/Mobile login-bro.png" alt="" />
+      </div>
+    </div>
+    <script src="/JS/login.js"></script>
+    <script src="/JS/registration.js"></script>
+  </body>
+</html>
